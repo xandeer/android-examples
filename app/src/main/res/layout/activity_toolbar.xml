@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.xandeer.examples.toolbar.ToolbarActivity">
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      app:navigationIcon="@drawable/ic_toolbar_back"
+      app:title="@string/app_name"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary">
+
+    <Button
+        android:id="@+id/toolbar_sheet_trigger"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_toolbar_sheet_trigger" />
+  </android.support.v7.widget.Toolbar>
+
+</android.support.constraint.ConstraintLayout>
