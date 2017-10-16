@@ -76,10 +76,5 @@ class ToolbarActivity : BaseActivity() {
 
   companion object {
     private val SHEET_START = Menu.FIRST
-
-    fun actionStart(context: Context) {
-      val intent = Intent(context, ToolbarActivity::class.java)
-      context.startActivity(intent)
-    }
   }
 }

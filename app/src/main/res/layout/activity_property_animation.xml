@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.xandeer.examples.animation.PropertyAnimationActivity">
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      app:title="@string/animation"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      app:navigationIcon="@drawable/ic_toolbar_back" />
+
+  <Button
+      android:id="@+id/translate"
+      android:text="@string/translate"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <TextView
+      android:id="@+id/translate_view"
+      android:text="@string/translate"
+      app:layout_constraintTop_toBottomOf="@+id/translate"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <Button
+      android:id="@+id/fade"
+      android:text="@string/fade"
+      app:layout_constraintTop_toBottomOf="@+id/translate_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <TextView
+      android:id="@+id/fade_view"
+      android:text="@string/fade"
+      app:layout_constraintTop_toBottomOf="@+id/fade"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <Button
+      android:id="@+id/rotate"
+      android:text="@string/rotate"
+      app:layout_constraintTop_toBottomOf="@+id/fade_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <TextView
+      android:id="@+id/rotate_view"
+      android:text="@string/rotate"
+      app:layout_constraintTop_toBottomOf="@+id/rotate"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

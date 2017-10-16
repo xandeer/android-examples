@@ -71,11 +71,4 @@ class SlidingTabActivity : BaseActivity() {
     }
     return super.onOptionsItemSelected(item)
   }
-
-  companion object {
-    fun actionStart(context: Context) {
-      val intent = Intent(context, SlidingTabActivity::class.java)
-      context.startActivity(intent)
-    }
-  }
 }
