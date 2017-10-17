@@ -1,7 +1,5 @@
 package me.xandeer.examples.slidingtab
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.util.Log

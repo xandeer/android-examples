@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="me.xandeer.examples.gridview.GridViewActivity">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    app:title="@string/grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:navigationIcon="@drawable/ic_toolbar_back" />
+
+  <GridView
+    android:id="@+id/grid_view"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:numColumns="auto_fit"
+    android:columnWidth="180dp"
+    android:stretchMode="spacingWidthUniform"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
