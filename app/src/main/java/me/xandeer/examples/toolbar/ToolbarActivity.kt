@@ -1,6 +1,5 @@
 package me.xandeer.examples.toolbar
 
-import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.PopupMenu
@@ -11,14 +10,11 @@ import me.xandeer.examples.R
 
 class ToolbarActivity : BaseActivity() {
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+  override fun setContentView() {
     setContentView(R.layout.activity_toolbar)
-
-    initToolBar()
   }
 
-  private fun initToolBar() {
+  override fun initTitle() {
     setSupportActionBar(toolbar)
 
     // 生成 PopupMenu
@@ -35,6 +31,7 @@ class ToolbarActivity : BaseActivity() {
     }
   }
 
+  override fun initView() {}
 
   private fun generateSheetMenus() {
     sheetMenus = PopupMenu(this, toolbar_sheet_trigger)

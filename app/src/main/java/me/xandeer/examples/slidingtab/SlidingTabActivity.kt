@@ -1,8 +1,6 @@
 package me.xandeer.examples.slidingtab
 
-import android.os.Bundle
 import android.support.design.widget.TabLayout
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -12,22 +10,21 @@ import me.xandeer.examples.R
 
 class SlidingTabActivity : BaseActivity() {
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+  override fun setContentView() {
     setContentView(R.layout.activity_sliding_tab)
-    Log.d(javaClass.simpleName, "Activity ${javaClass.simpleName} created.")
-
-    initToolbar()
-    initTab()
-    initPager()
   }
 
-  private fun initToolbar() {
+  override fun initTitle() {
     setSupportActionBar(toolbar)
 
     toolbar.setNavigationOnClickListener {
       this.finish()
     }
+  }
+
+  override fun initView() {
+    initTab()
+    initPager()
   }
 
   private fun initTab() {

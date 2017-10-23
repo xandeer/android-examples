@@ -11,10 +11,11 @@ import me.xandeer.examples.toolbar.ToolbarActivity
 
 class MainActivity : BaseActivity() {
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+  override fun setContentView() {
     setContentView(R.layout.activity_main)
+  }
 
+  override fun initView() {
     initMenusContainer()
   }
 

@@ -2,22 +2,17 @@ package me.xandeer.examples.animation
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_property_animation.*
+import me.xandeer.examples.BaseActivity
 import me.xandeer.examples.R
 
-class PropertyAnimationActivity : AppCompatActivity() {
+class PropertyAnimationActivity : BaseActivity() {
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+  override fun setContentView() {
     setContentView(R.layout.activity_property_animation)
-
-    initToolbar()
-    initButton()
   }
 
-  private fun initToolbar() {
+  override fun initTitle() {
     setSupportActionBar(toolbar)
 
     toolbar.setNavigationOnClickListener {
@@ -25,7 +20,7 @@ class PropertyAnimationActivity : AppCompatActivity() {
     }
   }
 
-  private fun initButton() {
+  override fun initView() {
     translate.setOnClickListener {
       val go = ObjectAnimator.ofFloat(translate_view, "translationX", 0f, 500f)
       val back = ObjectAnimator.ofFloat(translate_view, "translationX", 500f, 0f)
