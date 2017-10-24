@@ -16,4 +16,5 @@
   <string name="fade">Fade</string>
   <string name="rotate">Rotate</string>
   <string name="grid_view">Grid View</string>
+  <string name="file">File</string>
 </resources>

@@ -19,7 +19,7 @@
     <activity android:name=".toolbar.ToolbarActivity" />
     <activity android:name=".slidingtab.SlidingTabActivity" />
     <activity android:name=".animation.PropertyAnimationActivity" />
-    <activity android:name=".gridview.GridViewActivity"></activity>
+    <activity android:name=".gridview.GridViewActivity" />
+    <activity android:name=".file.FileActivity" />
   </application>
-
 </manifest>

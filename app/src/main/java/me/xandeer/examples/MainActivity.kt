@@ -1,10 +1,10 @@
 package me.xandeer.examples
 
 import android.content.Intent
-import android.os.Bundle
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import me.xandeer.examples.animation.PropertyAnimationActivity
+import me.xandeer.examples.file.FileActivity
 import me.xandeer.examples.gridview.GridViewActivity
 import me.xandeer.examples.slidingtab.SlidingTabActivity
 import me.xandeer.examples.toolbar.ToolbarActivity
@@ -37,7 +37,8 @@ class MainActivity : BaseActivity() {
         "Toolbar" to ToolbarActivity::class.java,
         "Sliding Tab" to SlidingTabActivity::class.java,
         "Property Animation" to PropertyAnimationActivity::class.java,
-        "Grid View" to GridViewActivity::class.java
+        "Grid View" to GridViewActivity::class.java,
+        "File" to FileActivity::class.java
     )
   }
 }
