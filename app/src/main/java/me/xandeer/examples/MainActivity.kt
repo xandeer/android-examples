@@ -6,6 +6,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import me.xandeer.examples.animation.PropertyAnimationActivity
 import me.xandeer.examples.file.FileActivity
 import me.xandeer.examples.gridview.GridViewActivity
+import me.xandeer.examples.realm.RealmActivity
 import me.xandeer.examples.slidingtab.SlidingTabActivity
 import me.xandeer.examples.toolbar.ToolbarActivity
 
@@ -32,13 +33,12 @@ class MainActivity : BaseActivity() {
     this.startActivity(intent)
   }
 
-  companion object {
-    val menus = mapOf<String, Class<*>>(
-        "Toolbar" to ToolbarActivity::class.java,
-        "Sliding Tab" to SlidingTabActivity::class.java,
-        "Property Animation" to PropertyAnimationActivity::class.java,
-        "Grid View" to GridViewActivity::class.java,
-        "File" to FileActivity::class.java
-    )
-  }
+  private val menus = mapOf<String, Class<*>>(
+      "Toolbar" to ToolbarActivity::class.java,
+      "Sliding Tab" to SlidingTabActivity::class.java,
+      "Property Animation" to PropertyAnimationActivity::class.java,
+      "Grid View" to GridViewActivity::class.java,
+      "File" to FileActivity::class.java,
+      "Realm" to RealmActivity::class.java
+  )
 }

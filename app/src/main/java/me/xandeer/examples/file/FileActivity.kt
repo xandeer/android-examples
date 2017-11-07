@@ -13,14 +13,6 @@ class FileActivity : BaseActivity() {
     setContentView(R.layout.activity_file)
   }
 
-  override fun initTitle() {
-    setSupportActionBar(toolbar)
-
-    toolbar.setNavigationOnClickListener {
-      finish()
-    }
-  }
-
   override fun initData() {
     makeDir()
 

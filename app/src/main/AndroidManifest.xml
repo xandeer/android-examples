@@ -21,5 +21,7 @@
     <activity android:name=".animation.PropertyAnimationActivity" />
     <activity android:name=".gridview.GridViewActivity" />
     <activity android:name=".file.FileActivity" />
+    <activity android:name=".realm.RealmActivity"></activity>
   </application>
+
 </manifest>

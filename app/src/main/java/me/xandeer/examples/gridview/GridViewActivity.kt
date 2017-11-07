@@ -10,19 +10,10 @@ class GridViewActivity : BaseActivity() {
     setContentView(R.layout.activity_grid_view)
   }
 
-
-  override fun initTitle() {
-    setSupportActionBar(toolbar)
-
-    toolbar.setNavigationOnClickListener {
-      this.finish()
-    }
-  }
-
   override fun initView() {
     grid_view.adapter = ImageAdapter(this, 3)
     // 注册单元格的点击事件
-    grid_view.setOnItemClickListener { parent, view, position, id ->
+    grid_view.setOnItemClickListener { _, _, position, _ ->
       toolbar.title = position.toString()
     }
   }

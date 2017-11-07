@@ -15,23 +15,16 @@ class ToolbarActivity : BaseActivity() {
   }
 
   override fun initTitle() {
-    setSupportActionBar(toolbar)
+    super.initTitle()
 
     // 生成 PopupMenu
     generateSheetMenus()
-
-    // 处理导行按钮的点击事件
-    toolbar.setNavigationOnClickListener {
-      this.finish()
-    }
 
     // 处理自定义按钮的点击事件
     toolbar_sheet_trigger.setOnClickListener {
       sheetMenus.show()
     }
   }
-
-  override fun initView() {}
 
   private fun generateSheetMenus() {
     sheetMenus = PopupMenu(this, toolbar_sheet_trigger)

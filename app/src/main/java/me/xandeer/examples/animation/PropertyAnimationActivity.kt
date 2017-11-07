@@ -12,14 +12,6 @@ class PropertyAnimationActivity : BaseActivity() {
     setContentView(R.layout.activity_property_animation)
   }
 
-  override fun initTitle() {
-    setSupportActionBar(toolbar)
-
-    toolbar.setNavigationOnClickListener {
-      this.finish()
-    }
-  }
-
   override fun initView() {
     translate.setOnClickListener {
       val go = ObjectAnimator.ofFloat(translate_view, "translationX", 0f, 500f)

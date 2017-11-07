@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="me.xandeer.examples.realm.RealmActivity">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    app:title="@string/realm"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:navigationIcon="@drawable/ic_toolbar_back" />
+
+  <LinearLayout
+    android:id="@+id/input"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+      android:id="@+id/edit_name"
+      android:hint="@string/name"
+      android:inputType="textCapWords"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="44dp" />
+    <EditText
+      android:id="@+id/edit_age"
+      android:hint="@string/age"
+      android:inputType="number"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="44dp" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/write"
+    app:layout_constraintTop_toBottomOf="@id/input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+      android:id="@+id/create"
+      android:text="@string/create_update"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content" />
+    <Button
+      android:id="@+id/all"
+      android:text="@string/all"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/query"
+    app:layout_constraintTop_toBottomOf="@id/write"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+      android:id="@+id/find_by_name"
+      android:text="@string/find_by_name"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content" />
+    <Button
+      android:id="@+id/find_by_age"
+      android:text="@string/find_by_age"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+
+  <ListView
+    app:layout_constraintTop_toBottomOf="@+id/query"
+    android:id="@+id/persons_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

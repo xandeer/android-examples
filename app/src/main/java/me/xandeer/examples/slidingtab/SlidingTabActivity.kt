@@ -14,14 +14,6 @@ class SlidingTabActivity : BaseActivity() {
     setContentView(R.layout.activity_sliding_tab)
   }
 
-  override fun initTitle() {
-    setSupportActionBar(toolbar)
-
-    toolbar.setNavigationOnClickListener {
-      this.finish()
-    }
-  }
-
   override fun initView() {
     initTab()
     initPager()

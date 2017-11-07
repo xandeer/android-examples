@@ -17,4 +17,11 @@
   <string name="rotate">Rotate</string>
   <string name="grid_view">Grid View</string>
   <string name="file">File</string>
+  <string name="realm">Realm</string>
+  <string name="name">name</string>
+  <string name="create_update">Create/Update</string>
+  <string name="find_by_name">Find by Name</string>
+  <string name="all">All</string>
+  <string name="find_by_age">Find by Age</string>
+  <string name="age">age</string>
 </resources>
